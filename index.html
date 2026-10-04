@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Channel 3 and Million Point Question</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: one narrow reading column, three anchored sections (about, privacy, terms) under a small CRT-style masthead. */
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --fg: #1b1e2b;
+  --muted: #5a6075;
+  --rule: #dde0ea;
+  --accent: #2f7d5b;
+  --display: "VT323", "Courier New", monospace;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0e1a; --surface: #131729; --fg: #e6e8f0; --muted: #a0a6bd; --rule: #262b42; --accent: #5fd39a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0e1a; --surface: #131729; --fg: #e6e8f0; --muted: #a0a6bd; --rule: #262b42; --accent: #5fd39a;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 1rem; line-height: 1.6; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 48px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 8px; }
+.mast { font-family: var(--display); font-size: 2.6rem; line-height: 1; color: var(--accent); letter-spacing: 0.02em; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-top: 8px; }
+nav a { color: var(--fg); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); }
+nav a:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+section { display: grid; gap: 12px; padding-top: 28px; border-top: 1px solid var(--rule); }
+h2 { font-family: var(--display); font-size: 1.9rem; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: balance; }
+h3 { font-size: 1rem; margin: 8px 0 0; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: grid; gap: 6px; }
+.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 16px; }
+.app { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px; display: grid; gap: 6px; min-width: 0; }
+.app .ch { font-family: var(--display); font-size: 1.1rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.app strong { font-size: 1.05rem; }
+.small { color: var(--muted); font-size: 0.9rem; }
+.contact { font-family: var(--display); font-size: 1.3rem; user-select: all; }
+</style>
+</head>
+<body style="margin:0">
+
+<div class="wrap">
+  <header>
+    <div class="mast">Channel 3 &amp; The Million Point Question</div>
+    <p class="sub">Two small private Roku apps by Mike Gross, shared with friends as beta channels.</p>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>These are hobby apps built to be played from the couch with a standard Roku remote. They're not for sale and aren't listed in the Roku Streaming Store. You get them by entering an access code on your Roku account.</p>
+    <div class="apps">
+      <div class="app">
+        <span class="ch">Arcade</span>
+        <strong>Channel 3</strong>
+        <p>A channel-flip TV menu of twelve couch games, from Snake and Spud Wars to STOMP and Hot Potato. Some games have cartoon slapstick violence.</p>
+      </div>
+      <div class="app">
+        <span class="ch">Quiz show</span>
+        <strong>The Million Point Question</strong>
+        <p>Fifteen questions, one ladder, four lifelines and a host with opinions. Play alone or pass the remote around.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy</h2>
+    <p>Neither app collects, stores or sends any personal information.</p>
+    <ul>
+      <li>No accounts or sign-in.</li>
+      <li>No ads, no tracking and no analytics.</li>
+      <li>No purchases or payments of any kind.</li>
+      <li>The apps don't connect to the internet while you play. High scores and settings stay on your Roku device.</li>
+    </ul>
+    <p class="small">Your Roku device and Roku account are covered by Roku's own privacy policy, which these apps don't change.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms of use</h2>
+    <ul>
+      <li>The apps are free, for personal, non-commercial use only.</li>
+      <li>They're beta software provided as is, with no warranty. They may have bugs, change, or stop working at any time. Each beta build expires after 120 days.</li>
+      <li>Please don't redistribute, resell or copy the apps or their artwork.</li>
+      <li>Access can be removed at any time.</li>
+    </ul>
+    <h3>Contact</h3>
+    <p>Questions or bug reports go to Mike Gross:</p>
+    <p class="contact">mgross@roku.com</p>
+    <p class="small">Last updated October 4, 2026.</p>
+  </section>
+</div>
+
+</body>
+</html>
